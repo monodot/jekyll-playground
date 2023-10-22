@@ -1,0 +1,21 @@
+{
+  "name": "jekyll-vue-demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run vite-watch & npm run jekyll-serve",
+    "build": "npm run vite-build && npm run jekyll-build",
+    "vite-build": "vite build",
+    "vite-watch": "vite build --watch",
+    "vite-preview": "vite preview",
+    "jekyll-build": "bundle exec jekyll build",
+    "jekyll-serve": "bundle exec jekyll serve --livereload"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "vite": "^4.4.11"
+  }
+}
